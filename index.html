@@ -1,6 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volver al Juego</title>
+</head>
 <body>
-<h1>Hello World</h1>
+    <h1>Has salido del juego</h1>
+    <button id="backToGame">Volver al Juego</button>
+
+    <script>
+        document.getElementById("backToGame").addEventListener("click", function() {
+            window.location.href = 'https://github.com/againstsoftware/Stratum/tree/main'; 
+        });
+    </script>
 </body>
 </html>
