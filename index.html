@@ -10,7 +10,7 @@
     <p>Introduce tu nombre de usuario:</p>
     <input type="text" id="username" placeholder="Usuario">
     <br><br>
-    <button id="backToGame">Volver al Juego</button>
+    <button id="backToGame">Confirmar y volver al juego</button>
 
     <script>
         document.getElementById("backToGame").addEventListener("click", function() {
@@ -21,9 +21,9 @@
                 return;
             }
 
-            // Enviar el nombre de usuario al juego
-            if (window.opener && window.opener.unityInstance) {
-                window.opener.unityInstance.SendMessage('InteractionSystemMenu', 'ReceiveUsername', username);
+            // Enviar el nombre de usuario al juego usando postMessage
+            if (window.opener) {
+                window.opener.postMessage({ username: username }, "*"); // Enviar a la pestaña original
                 window.close();
             } else {
                 alert("No se puede volver a la pestaña del juego.");
