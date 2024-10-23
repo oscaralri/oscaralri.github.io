@@ -7,12 +7,23 @@
 </head>
 <body>
     <h1>Has salido del juego</h1>
+    <p>Introduce tu nombre de usuario:</p>
+    <input type="text" id="username" placeholder="Usuario">
+    <br><br>
     <button id="backToGame">Volver al Juego</button>
 
     <script>
         document.getElementById("backToGame").addEventListener("click", function() {
-            if (window.opener) {
-                window.opener.focus();
+            var username = document.getElementById("username").value;
+
+            if (username.trim() === "") {
+                alert("Por favor, introduce un nombre de usuario.");
+                return;
+            }
+
+            // Enviar el nombre de usuario al juego
+            if (window.opener && window.opener.unityInstance) {
+                window.opener.unityInstance.SendMessage('GameManager', 'ReceiveUsername', username);
                 window.close();
             } else {
                 alert("No se puede volver a la pestaña del juego.");
