@@ -23,7 +23,7 @@
 
             // Enviar el nombre de usuario al juego
             if (window.opener && window.opener.unityInstance) {
-                window.opener.unityInstance.SendMessage('GameManager', 'ReceiveUsername', username);
+                window.opener.unityInstance.SendMessage('InteractionSystemMenu', 'ReceiveUsername', username);
                 window.close();
             } else {
                 alert("No se puede volver a la pestaña del juego.");
