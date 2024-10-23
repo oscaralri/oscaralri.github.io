@@ -6,12 +6,17 @@
     <title>Volver al Juego</title>
 </head>
 <body>
-    <h1>Has salido del juego para realizar el matchmaking</h1>
+    <h1>Has salido del juego</h1>
     <button id="backToGame">Volver al Juego</button>
 
     <script>
         document.getElementById("backToGame").addEventListener("click", function() {
-            window.location.href = 'https://github.com/againstsoftware/Stratum/tree/main'; 
+            if (window.opener) {
+                window.opener.focus();
+                window.close();
+            } else {
+                alert("No se puede volver a la pestaña del juego.");
+            }
         });
     </script>
 </body>
