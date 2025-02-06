@@ -1,0 +1,45 @@
+/* Reset básico de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor general */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos de la imagen */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, sans-serif;
+}
+
+/* Hover */
+.img-hover {
+    transition: transform 0.2s ease, filter 0.2s ease; /* Transición suave */
+}
+
+.img-hover:hover {
+    transform: scale(1.01); /* Zoom al 110% */
+    filter: brightness(80%); /* Oscurece la imagen */
+}
+
+.col-md-4 img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible de la columna */
+    height: 200px; /* Tamaño fijo para la altura (puedes ajustarlo) */
+    object-fit: cover; /* Mantiene la proporción de la imagen y recorta el exceso si es necesario */
+}
+
