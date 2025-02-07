@@ -84,3 +84,13 @@ p {
 #acerca-de-mi h1 {
     padding-top: 0px;
 }
+
+@media (max-width: 768px) {
+    #acerca-de-mi p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto */
+    }
+
+    #contacto img {
+        width: 40%; /* Reduce el tamaño de las imágenes */
+    }
+}
