@@ -1,4 +1,30 @@
-/* Reset básico de márgenes y rellenos */
+@media (max-width: 768px) {
+    #acerca-de-mi p {
+        font-size: 1rem; /* Reduce el tamaño del texto */
+    }
+}
+
+@media (max-width: 768px) {
+    #contacto .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contacto .col-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contacto img {
+        width: 60px; /* Ajusta el tamaño de las imágenes en móviles */
+        height: 60px; /* Mantiene el tamaño cuadrado */
+    }
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -85,12 +111,3 @@ p {
     padding-top: 0px;
 }
 
-@media (max-width: 768px) {
-    #acerca-de-mi p {
-        font-size: 0.9rem; /* Reduce el tamaño del texto */
-    }
-
-    #contacto img {
-        width: 40%; /* Reduce el tamaño de las imágenes */
-    }
-}
