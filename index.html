@@ -8,80 +8,146 @@
     <!-- Bootstrap CSS desde CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Estilos personalizados (opcional) -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Barra de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Óscar Alarcón Riera</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Acerca de mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                </ul>
+    <!-- Barra de navegación fija -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Óscar Alarcón Riera</a>
+        
+        <!-- Menú colapsable, pero sin enlaces a otras zonas de la página -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- El menú de navegación está vacío ahora -->
+        </div>
+        
+        <!-- Botón "English" -->
+        <button class="btn btn-outline-light ms-3" id="lang-toggle">English</button>
+    </div>
+</nav>
+
+    <p id="nav1"></p>
+    <!-- Sección "Acerca de mí" -->
+    <div class="container mt-2 pt-8" id="acerca-de-mi">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 data-es="Acerca de mí" data-en="About Me">Acerca de mí</h1>
             </div>
         </div>
-    </nav>
-
-    <!-- Contenido principal -->
-<div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <p data-es="¡Hola! Soy un estudiante de último año de Diseño y Desarrollo de Videojuegos. En esta página podrás ver algunos videojuegos en los que he trabajado como programador. En este momento estoy buscando prácticas en empresas y estoy dispuesto a trabajar en todo tipo de ofertas siempre que sean una oportunidad para continuar formándome y aprendiendo." 
+                data-en="Hello! I am a final year student in Video Game Design and Development. On this page you can see some of the video games I have worked on as a programmer. I am currently looking for an internship and am willing to work on all kinds of opportunities as long as they allow me to continue learning and growing.">
+                    ¡Hola! Soy un estudiante de último año de Diseño y Desarrollo de Videojuegos. En esta página podrás ver algunos videojuegos en los que he trabajado como programador. En este momento estoy buscando prácticas en empresas y estoy dispuesto a trabajar en todo tipo de ofertas siempre que sean una oportunidad para continuar formándome y aprendiendo.  
+                </p>
+            </div>
+        </div>
+    </div>
+    <p id="nav2"></p>
+    <!-- Sección "Proyectos realizados" -->
+    <div class="container" id="proyectos">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 data-es="Proyectos realizados" data-en="Completed Projects">Proyectos realizados</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center mb-2">
+                <h5 class="mb-2">Make Room for the Past</h5>
+                <a href="https://rosasuffo.itch.io/make-room-for-the-past" target="_blank">
+                    <img src="images/makeRoomPast.png" class="img-fluid rounded img-hover" alt="Make Room for the Past">
+                </a>
+            </div>
+            <div class="col-md-4 text-center mb-2">
+                <h5 class="mb-2">Stratum</h5>
+                <a href="https://againstsoftware.itch.io/stratum" target="_blank">
+                    <img src="images/stratum.png" class="img-fluid rounded img-hover" alt="Stratum">
+                </a>
+            </div>
+            <div class="col-md-4 text-center mb-2">
+                <h5 class="mb-2">Weird Fishes</h5>
+                <a href="https://rosasuffo.itch.io/weirdfishes" target="_blank">
+                    <img src="images/weirdFishes.png" class="img-fluid rounded img-hover" alt="Weird Fishes">
+                </a>
+            </div>
+            <div class="col-md-4 text-center mb-2">
+                <h5 class="mb-2">I-Scream</h5>
+                <a href="https://rosasuffo.itch.io/i-scream" target="_blank">
+                    <img src="images/iscream.png" class="img-fluid rounded img-hover" alt="I-Scream">
+                </a>
+            </div>
+        </div>
+    </div>
+    <p id="nav3"></p>
+    <!-- Sección "Contacto" -->
+<div class="container d-flex flex-column align-items-center justify-content-center mt-4 mb-4" id="contacto">
     <div class="row">
-        <div class="col-md-8">
-            <h1>Proyectos realizados</h1>
+        <div class="col text-center">
+            <h1 data-es="Contacto" data-en="Contact">Contacto</h1>
+            <p> </p>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-4 text-center mb-2">
-            <!-- Título arriba de la imagen -->
-            <h5 class="mb-2">Make Room for the Past</h5>
-            
-            <!-- Imagen con enlace -->
-            <a href="https://rosasuffo.itch.io/make-room-for-the-past" target="_blank">
-                <img src="images/makeRoomPast.png" class="img-fluid rounded img-hover" alt="Make Room for the Past" title="Make Room for the Past">
-            </a>
-        </div>
-              
-
-        <div class="col-md-4 text-center mb-2">
-            <!-- Título arriba de la imagen -->
-            <h5 class="mb-2">Stratum</h5>
-            
-            <!-- Imagen con enlace -->
-            <a href="https://againstsoftware.itch.io/stratum" target="_blank">
-                <img src="images/stratum.png" class="img-fluid rounded img-hover" alt="Stratum" title="Stratum">
+    <div class="row justify-content-center">
+        <div class="col-md-2 text-center">
+            <h5 class="mb-2">itch.io</h5>
+            <a href="https://aldeano.itch.io/" target="_blank">
+                <img src="images/itchio.png" class="img-hover img-fluid w-50 square-img" alt="itch.io">
             </a>
         </div>
 
-        <div class="col-md-4 text-center mb-2">
-            <!-- Título arriba de la imagen -->
-            <h5 class="mb-2">Weird Fishes</h5>
-
-            <a href="https://rosasuffo.itch.io/weirdfishes" target="_blank">
-                <img src="images/weirdFishes.png" class="img-fluid rounded img-hover" alt="Weird Fishes" title="Weird Fishes">
+        <div class="col-md-2 text-center">
+            <h5 class="mb-2">Github</h5>
+            <a href="https://github.com/oscaralri" target="_blank">
+                <img src="images/github.png" class="img-hover img-fluid w-50 square-img" alt="Github">
             </a>
         </div>
 
-        <div class="col-md-4 text-center mb-2">
-            <!-- Título arriba de la imagen -->
-            <h5 class="mb-2">I-Scream</h5>
+        <div class="col-md-2 text-center">
+            <!-- Título de Currículum con los atributos para cambio de idioma -->
+            <h5 class="mb-2" data-es="Currículum" data-en="Curriculum">Currículum</h5>
+            <a href="images/cv.pdf" target="_blank">
+                <img src="images/cv.png" class="img-hover img-fluid w-50 square-img" alt="Currículum">
+            </a>
+        </div>
 
-            <a href="https://rosasuffo.itch.io/i-scream" target="_blank">
-                <img src="images/iscream.png" class="img-fluid rounded img-hover" alt="IScream" title="IScream">
+        <div class="col-md-2 text-center">
+            <h5 class="mb-2">LinkedIn</h5>
+            <a href="https://www.linkedin.com/in/%C3%B3scar-alarc%C3%B3n-riera-b4a28b344/" target="_blank">
+                <img src="images/linkedin.png" class="img-hover img-fluid w-50 square-img" alt="LinkedIn">
             </a>
         </div>
     </div>
 </div>
 
 
-    <!-- Bootstrap JS desde CDN (necesario para componentes interactivos) -->
+    <!-- JavaScript para cambiar idioma -->
+    <script>
+        let currentLang = 'es'; 
+
+        document.getElementById('lang-toggle').addEventListener('click', function() {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+
+            document.querySelectorAll('[data-es]').forEach(el => {
+                el.innerText = el.getAttribute(`data-${currentLang}`);
+            });
+
+            this.innerText = currentLang === 'es' ? 'English' : 'Español';
+        });
+
+        // Inicializar NavMesh al cargar la página
+        window.onload = function() {
+            initializeNavMesh();
+        };
+        
+        // Función para inicializar/reiniciar el navmesh
+        function initializeNavMesh() {
+                
+            // Lógica de reinicio del navmesh
+        }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

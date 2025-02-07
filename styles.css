@@ -43,3 +43,42 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover; /* Mantiene la proporción de la imagen y recorta el exceso si es necesario */
 }
 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.square-img {
+    width: 100%; /* Ajusta el tamaño según el contenedor */
+    aspect-ratio: 1 / 1; /* Hace que la imagen sea siempre cuadrada */
+    object-fit: cover; /* Evita la deformación y mantiene el contenido visible */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+body {
+    background: linear-gradient(to bottom, #d9edf8, #62b1d3); /* Degradado de azul oscuro a un azul más claro */
+    color: rgb(0, 0, 0); /* Texto en blanco para mejor contraste */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fuente para todo el cuerpo */
+}
+
+/* Aplicar la misma fuente a los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif /* La misma fuente que el cuerpo */
+}
+.navbar-nav .nav-link {
+    color: white !important; /* Cambia los enlaces de navegación a blanco */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em; /* Aumenta el tamaño del título */
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.15em; /* Aumenta el tamaño del párrafo */
+}
+
+#acerca-de-mi h1 {
+    padding-top: 0px;
+}
