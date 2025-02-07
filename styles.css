@@ -63,7 +63,9 @@ body {
 
 /* Aplicar la misma fuente a los títulos */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif /* La misma fuente que el cuerpo */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* La misma fuente que el cuerpo */
+    font-size: 1.5em;
+    
 }
 .navbar-nav .nav-link {
     color: white !important; /* Cambia los enlaces de navegación a blanco */
@@ -76,7 +78,7 @@ h1 {
 }
 
 p {
-    font-size: 1.15em; /* Aumenta el tamaño del párrafo */
+    font-size: 1.5em; /* Aumenta el tamaño del párrafo */
 }
 
 #acerca-de-mi h1 {
