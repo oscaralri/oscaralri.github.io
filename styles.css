@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     #acerca-de-mi p {
-        font-size: 1rem; /* Reduce el tamaño del texto */
+        font-size: 1rem; 
     }
 }
 
@@ -18,8 +18,8 @@
     }
 
     #contacto img {
-        width: 60px; /* Ajusta el tamaño de las imágenes en móviles */
-        height: 60px; /* Mantiene el tamaño cuadrado */
+        width: 60px; 
+        height: 60px;
     }
 }
 
@@ -31,42 +31,37 @@
     box-sizing: border-box;
 }
 
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Contenedor general */
 .container {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
 }
 
-/* Estilos de la imagen */
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: Arial, sans-serif;
 }
 
-/* Hover */
 .img-hover {
-    transition: transform 0.2s ease, filter 0.2s ease; /* Transición suave */
+    transition: transform 0.2s ease, filter 0.2s ease; 
 }
 
 .img-hover:hover {
-    transform: scale(1.01); /* Zoom al 110% */
-    filter: brightness(80%); /* Oscurece la imagen */
+    transform: scale(1.01); 
+    filter: brightness(80%); 
 }
 
 .col-md-4 img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible de la columna */
-    height: 200px; /* Tamaño fijo para la altura (puedes ajustarlo) */
-    object-fit: cover; /* Mantiene la proporción de la imagen y recorta el exceso si es necesario */
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
 }
 
 .container {
@@ -75,36 +70,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .square-img {
-    width: 100%; /* Ajusta el tamaño según el contenedor */
-    aspect-ratio: 1 / 1; /* Hace que la imagen sea siempre cuadrada */
-    object-fit: cover; /* Evita la deformación y mantiene el contenido visible */
-    border-radius: 15px; /* Bordes redondeados */
+    width: 100%; 
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    border-radius: 15px; 
 }
 
 body {
-    background: linear-gradient(to bottom, #d9edf8, #62b1d3); /* Degradado de azul oscuro a un azul más claro */
-    color: rgb(0, 0, 0); /* Texto en blanco para mejor contraste */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Fuente para todo el cuerpo */
+    background: linear-gradient(to bottom, #d9edf8, #62b1d3); 
+    color: rgb(0, 0, 0); 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
 }
 
-/* Aplicar la misma fuente a los títulos */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* La misma fuente que el cuerpo */
     font-size: 1.5em;
     
 }
 .navbar-nav .nav-link {
-    color: white !important; /* Cambia los enlaces de navegación a blanco */
+    color: white !important; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
-    font-size: 2em; /* Aumenta el tamaño del título */
+    font-size: 2em; 
     font-weight: bold;
 }
 
 p {
-    font-size: 1.5em; /* Aumenta el tamaño del párrafo */
+    font-size: 1.3em; 
 }
 
 #acerca-de-mi h1 {
