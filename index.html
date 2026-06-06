@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Óscar Alarcón Riera</title>
     
-    <!-- Bootstrap CSS desde CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Barra de navegación fija -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="">Óscar Alarcón Riera</a>
@@ -25,7 +23,6 @@
     </nav>
     <p id="nav1"></p>
     
-    <!-- Sección "Acerca de mí" -->
     <div class="container mt-2 pt-8" id="acerca-de-mi">
         <div class="row">
             <div class="col-md-8">
@@ -34,16 +31,15 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p data-es="¡Hola! Soy un estudiante de último año de Diseño y Desarrollo de Videojuegos. En esta página podrás ver algunos videojuegos en los que he trabajado como programador. En este momento estoy buscando prácticas en empresas y estoy dispuesto a trabajar en todo tipo de ofertas siempre que sean una oportunidad para continuar formándome y aprendiendo." 
-                data-en="Hello! I am a final year student in Video Game Design and Development. On this page you can see some of the video games I have worked on as a programmer. I am currently looking for an internship and am willing to work on all kinds of opportunities as long as they allow me to continue learning and growing.">
-                    Hello! I am a final year student in Video Game Design and Development. On this page you can see some of the video games I have worked on as a programmer. I am currently looking for an internship and am willing to work on all kinds of opportunities as long as they allow me to continue learning and growing.
-                </p>
+                <p data-es="¡Hola! Soy un Programador recién graduado en Diseño y Desarrollo de Videojuegos en la Universidad Rey Juan Carlos. Además de todo lo aprendido durante el grado, he sido el programador en varios videojuegos para diferentes Game Jams y he realizado proyectos como el desarrollo de un motor gráfico en OpenGL." 
+                data-en="Hello! I am a recent graduate with a degree in Video Game Design and Development from Universidad Rey Juan Carlos. In addition to everything I learned during my degree program, I have also worked as a programmer on several video games for various game jams and have worked on projects such as developing a graphics engine using OpenGL.">
+                Hello! I am a recent graduate with a degree in Video Game Design and Development from Universidad Rey Juan Carlos. In addition to everything I learned during my degree program, I have also worked as a programmer on several video games for various game jams and have worked on projects such as developing a graphics engine using OpenGL. 
+            </p>
             </div>
         </div>
     </div>
     <p id="nav2"></p>
     
-    <!-- Sección "Proyectos realizados" -->
     <div class="container" id="proyectos">
         <div class="row">
             <div class="col-md-8">
@@ -51,6 +47,14 @@
             </div>
         </div>
         <div class="row">
+           <div class="row">
+    <div class="col-md-8 mx-auto text-center mb-4">
+        <h5 class="mb-2">OpenGL Graphics Engine</h5>
+        <a href="https://github.com/oscaralri/HPC-for-Games" target="_blank">
+            <img src="images/engine.png" class="img-fluid rounded img-hover" alt="OpenGL Graphics Engine">
+        </a>
+    </div>
+</div>
             <div class="col-md-6 text-center mb-2">
                 <h5 class="mb-2">Make Room for the Past</h5>
                 <a href="https://rosasuffo.itch.io/make-room-for-the-past" target="_blank">
@@ -80,7 +84,6 @@
     
     <p id="nav3"></p>
     
-    <!-- Sección "Contacto" -->
     <div class="container d-flex flex-column align-items-center justify-content-center mt-4 mb-4" id="contacto">
         <div class="row">
             <div class="col text-center">
@@ -106,7 +109,7 @@
         
             <div class="col-6 col-md-2 text-center">
                 <h5 class="mb-2" data-es="Currículum" data-en="Curriculum">Curriculum</h5>
-                <a href="images/OscarAlarconRiera_eng.pdf" target="_blank">
+                <a href="images/OscarAlarconRieraCV_eng.pdf" target="_blank">
                     <img src="images/cv.png" class="img-hover img-fluid square-img" alt="Curriculum">
                 </a>
             </div>
@@ -120,9 +123,8 @@
         </div>
     </div>
 
-    <!-- JavaScript para cambiar idioma -->
     <script>
-        let currentLang = 'en'; // Idioma predeterminado: inglés
+        let currentLang = 'en'; 
 
         document.getElementById('lang-toggle').addEventListener('click', function() {
             currentLang = currentLang === 'es' ? 'en' : 'es';
@@ -134,14 +136,11 @@
             this.innerText = currentLang === 'es' ? 'English' : 'Español';
         });
 
-        // Inicializar NavMesh al cargar la página
         window.onload = function() {
             initializeNavMesh();
         };
         
-        // Función para inicializar/reiniciar el navmesh
         function initializeNavMesh() {
-            // Lógica de reinicio del navmesh
         }
     </script>
 
