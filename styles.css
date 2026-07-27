@@ -1,10 +1,4 @@
 @media (max-width: 768px) {
-    #acerca-de-mi p {
-        font-size: 1rem; 
-    }
-}
-
-@media (max-width: 768px) {
     #contacto .row {
         display: flex;
         flex-wrap: wrap;
@@ -31,13 +25,10 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
 
 @media (min-width: 769px) {
     .container {
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 }
@@ -59,18 +50,16 @@ body {
         text-align: center;
     }
     p {
-        font-size: 1.1rem !important;
+        font-size: 1.0rem;
+        color: white;
     }
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto;   
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, sans-serif;
-}
 
 .img-hover {
     transition: transform 0.2s ease, filter 0.2s ease; 
@@ -79,6 +68,14 @@ h1, h2, h3, h4, h5, h6 {
 .img-hover:hover {
     transform: scale(1.01); 
     filter: brightness(80%); 
+}
+
+.square-img {
+    width: 100%; 
+    max-width: 100px; 
+    aspect-ratio: 1/1;
+    object-fit: cover;;
+    display: inline-block;
 }
 
 .col-md-4 img {
@@ -92,27 +89,23 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 15px;
 }
 
-.square-img {
-    width: 100%; 
-    aspect-ratio: 1 / 1;
-    object-fit: cover; 
-    border-radius: 15px; 
-}
-
 body {
-    background: linear-gradient(to bottom, #d9edf8, #62b1d3); 
-    color: rgb(0, 0, 0); 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    line-height: 1.5;
+    background-color: #0b515e;
+    color: #fcfcfc; 
+    font-family: 'Tahoma', Arial, sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* La misma fuente que el cuerpo */
-    font-size: 1.5em;
-    
+    font-family: inherit;
+    color:#f6e879;
+    letter-spacing: 0.2px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65); 
 }
 .navbar-nav .nav-link {
     color: white !important; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: inherit;
 }
 
 h1 {
@@ -121,10 +114,47 @@ h1 {
 }
 
 p {
-    font-size: 1.3em; 
+    font-size: 1.2em; 
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.65);
 }
 
 #acerca-de-mi h1 {
     padding-top: 0px;
 }
 
+.image-title{
+  color: #f6e879;
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: inherit;
+  text-shadow: 0 2px 8px rgba(0,0,0, 0.65);
+}
+
+.contact-text{
+  color: white;
+  font-size: 1.2em;
+  font-family: inherit;
+  text-shadow: 0 2px 8px rgba(0,0,0, 0.65); 
+}
+
+.team-size{
+    font-size: 0.95rem;
+}
+
+.about-me-text
+{
+    font-size: 1.2rem;
+}
+
+.btn-github {
+    color: #f6e879;                  
+    border: 1px solid #f6e879;       
+    background-color: transparent;   
+    transition: all 0.2s ease;
+}
+
+.btn-github:hover {
+    background-color: #b3a858;       
+    color: #0b515e;                  
+    border-color: #f6e879;
+}

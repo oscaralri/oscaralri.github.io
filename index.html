@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Óscar Alarcón Riera</title>
+
+    <link rel="icon" type="image/png" href="images/icon.png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="">Óscar Alarcón Riera</a>
+            <a class="navbar-brand" href="#">Óscar Alarcón Riera</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#nav1" data-es="" data-en=""></a></li>
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                    </li>
                 </ul>
             </div>
             <button class="btn btn-outline-light ms-3" id="lang-toggle">Español</button>
         </div>
     </nav>
-    <p id="nav1"></p>
     
     <div class="container mt-2 pt-8" id="acerca-de-mi">
         <div class="row">
@@ -31,89 +34,49 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p data-es="¡Hola! Soy un Programador recién graduado en Diseño y Desarrollo de Videojuegos en la Universidad Rey Juan Carlos. Además de todo lo aprendido durante el grado, he sido el programador en varios videojuegos para diferentes Game Jams y he realizado proyectos como el desarrollo de un motor gráfico en OpenGL." 
-                data-en="Hello! I am a recent graduate with a degree in Video Game Design and Development from Universidad Rey Juan Carlos. In addition to everything I learned during my degree program, I have also worked as a programmer on several video games for various game jams and have worked on projects such as developing a graphics engine using OpenGL.">
-                Hello! I am a recent graduate with a degree in Video Game Design and Development from Universidad Rey Juan Carlos. In addition to everything I learned during my degree program, I have also worked as a programmer on several video games for various game jams and have worked on projects such as developing a graphics engine using OpenGL. 
-            </p>
+                <p class="about-me-text" 
+                   data-es="¡Hola! Soy un Programador recién graduado en Diseño y Desarrollo de Videojuegos en la Universidad Rey Juan Carlos. Además de todo lo aprendido durante el grado, he sido el programador en varios videojuegos para diferentes Game Jams y he realizado proyectos como el desarrollo de un motor gráfico en OpenGL." 
+                   data-en="Hello! I am a recent graduate with a degree in Video Game Design and Development from Universidad Rey Juan Carlos. In addition to everything I learned during my degree program, I have also worked as a programmer on several video games for various game jams and have worked on projects such as developing a graphics engine using OpenGL.">
+                   Hello! I am a recent graduate with a degree in Video Game Design and Development from Universidad Rey Juan Carlos. In addition to everything I learned during my degree program, I have also worked as a programmer on several video games for various game jams and have worked on projects such as developing a graphics engine using OpenGL.
+                </p>
             </div>
         </div>
     </div>
-    <p id="nav2"></p>
-    
-    <div class="container" id="proyectos">
-        <div class="row">
-            <div class="col-md-8">
-                <h1 data-es="Proyectos realizados" data-en="Completed Projects">Completed Projects</h1>
-            </div>
-        </div>
-        <div class="row">
-    <div class="col-12 col-md-8 mx-auto text-center mb-2">
-        <h5 class="mb-2">OpenGL Graphics Engine</h5>
-        <a href="https://github.com/oscaralri/HPC-for-Games" target="_blank">
-            <img src="images/engine.png" class="img-fluid rounded img-hover" alt="OpenGL Graphics Engine">
-        </a>
-</div>
-            <div class="col-12 col-md-6 text-center mb-2">
-                <h5 class="mb-2">Make Room for the Past</h5>
-                <a href="https://github.com/oscaralri/gamegen5" target="_blank">
-                    <img src="images/makeRoomPast.png" class="img-fluid rounded img-hover" alt="Make Room for the Past">
-                </a>
-            </div>
-            <div class="col-12 col-md-6 text-center mb-2">
-                <h5 class="mb-2">Stratum</h5>
-                <a href="https://againstsoftware.itch.io/stratum" target="_blank">
-                    <img src="images/stratum.png" class="img-fluid rounded img-hover" alt="Stratum">
-                </a>
-            </div>
-            <div class="col-12 col-md-6 text-center mb-2">
-                <h5 class="mb-2">Weird Fishes</h5>
-                <a href="https://github.com/oscaralri/pezpistola" target="_blank">
-                    <img src="images/weirdFishes.png" class="img-fluid rounded img-hover" alt="Weird Fishes">
-                </a>
-            </div>
-            <div class="col-12 col-md-6 text-center mb-2">
-                <h5 class="mb-2">I-Scream</h5>
-                <a href="https://github.com/Ndj-13/IScream_v2" target="_blank">
-                    <img src="images/iscream.png" class="img-fluid rounded img-hover" alt="I-Scream">
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <p id="nav3"></p>
-    
-    <div class="container d-flex flex-column align-items-center justify-content-center mt-4 mb-4" id="contacto">
-        <div class="row">
-            <div class="col text-center">
-                <h1 data-es="Contacto" data-en="Contact">Contact</h1>
-                <p> </p>
-            </div>
-        </div>
-    
-        <div class="row justify-content-center">
+
+    <div class="container d-flex flex-column align-items-center justify-content-center mb-4" id="contacto">
+        <div class="row justify-content-center mt-3">
+
             <div class="col-6 col-md-2 text-center">
-                <h5 class="mb-2">itch.io</h5>
+                <h5 class="mb-2 contact-text"></h5>
+                <!-- Enlace mailto directo -->
+                <a href="mailto:oscar.alarconri@gmail.com">
+                    <img src="images/mailIcon.png" class="img-hover img-fluid square-img" alt="mail">
+                </a>
+            </div>
+
+            <div class="col-6 col-md-2 text-center">
+                <h5 class="mb-2 contact-text"></h5>
                 <a href="https://aldeano.itch.io/" target="_blank">
                     <img src="images/itchio.png" class="img-hover img-fluid square-img" alt="itch.io">
                 </a>
             </div>
-        
+
             <div class="col-6 col-md-2 text-center">
-                <h5 class="mb-2">Github</h5>
+                <h5 class="mb-2 contact-text"></h5>
                 <a href="https://github.com/oscaralri" target="_blank">
-                    <img src="images/github.png" class="img-hover img-fluid square-img" alt="Github">
+                    <img src="images/github.png" class="img-hover img-fluid square-img" alt="GitHub">
                 </a>
             </div>
-        
+
             <div class="col-6 col-md-2 text-center">
-                <h5 class="mb-2" data-es="Currículum" data-en="Curriculum">Curriculum</h5>
+                <h5 class="mb-2 contact-text"></h5>
                 <a href="images/OscarAlarconRieraCV_eng.pdf" target="_blank">
-                    <img src="images/cv.png" class="img-hover img-fluid square-img" alt="Curriculum">
+                    <img src="images/cv.png" class="img-hover img-fluid square-img" style="transform: scale(1.25);" alt="CV">
                 </a>
             </div>
-        
+
             <div class="col-6 col-md-2 text-center">
-                <h5 class="mb-2">LinkedIn</h5>
+                <h5 class="mb-2 contact-text"></h5>
                 <a href="https://www.linkedin.com/in/%C3%B3scar-alarc%C3%B3n-riera-b4a28b344/" target="_blank">
                     <img src="images/linkedin.png" class="img-hover img-fluid square-img" alt="LinkedIn">
                 </a>
@@ -121,26 +84,213 @@
         </div>
     </div>
 
+    <p id="nav3"></p>
+    
+    <div class="container" id="proyectos">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 data-es="Proyectos realizados" data-en="Completed Projects">Completed Projects</h1>
+            </div>
+        </div>
+
+        <!-- PROYECTO 1 -->
+        <div class="row project-card mb-5 align-items-center">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <a href="https://github.com/oscaralri/HPC-for-Games" target="_blank">
+                    <img src="images/engine.png" class="img-fluid rounded img-hover w-100" alt="OpenGL Graphics Engine">
+                </a>
+            </div>
+            <div class="col-12 col-md-7">
+                <h3 class="image-title mb-2">OpenGL Graphics Engine</h3>
+                <p data-es="Diseño y desarrollo de un motor gráfico de alto rendimiento creado desde cero en C++ y OpenGL. La arquitectura sigue los principios del diseño orientado a datos e implementa técnicas de optimización AZDO."
+                   data-en="Design and development of a high-performance graphics engine built from scratch in C++ and OpenGL. The architecture follows Data-Driven Design principles and implements AZDO optimization techniques.">
+                   Design and development of a high-performance graphics engine built from scratch in C++ and OpenGL. The architecture follows Data-Driven Design principles and implements AZDO optimization techniques.
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Habilidades:</b> C++, OpenGL, GLSL"
+                   data-en="<b>Skills:</b> C++, OpenGL, GLSL">
+                   <b>Skills:</b> C++, OpenGL, GLSL
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Equipo:</b> Trabajo en solitario" 
+                   data-en="<b>Team:</b> Solo Project">
+                   <b>Team:</b> Solo Project
+                </p>
+
+                <a href="https://github.com/oscaralri/HPC-for-Games" target="_blank" class="btn btn-github btn-sm mt-2">
+                    <span data-es="Ver en GitHub ↗" data-en="View on GitHub ↗">View on GitHub ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- PROYECTO 2 -->
+        <div class="row project-card mb-5 align-items-center">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <a href="https://github.com/oscaralri/gamegen5" target="_blank">
+                    <img src="images/makeRoomPast.png" class="img-fluid rounded img-hover w-100" alt="Make Room for the Past">
+                </a>
+            </div>
+            <div class="col-12 col-md-7">
+                <h3 class="image-title mb-2">Make Room for the Past</h3>
+                <p data-es="Diseño y programación de las mecánicas principales de juego, interacción con la interfaz de usuario y gestión de un gran número de assets en Unity para un videojuego de decoración/simulación de vida."
+                   data-en="Design and programming of core gameplay mechanics, UI interaction, and handling of a large number of assets in Unity for a decoration/life-sim game.">
+                   Design and programming of core gameplay mechanics, UI interaction, and handling of a large number of assets in Unity for a decoration/life-sim game.
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Habilidades:</b> C#, Unity"
+                   data-en="<b>Skills:</b> C#, Unity">
+                   <b>Skills:</b> C#, Unity
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Equipo:</b> 1 Programador (yo) y 1 Artista" 
+                   data-en="<b>Team:</b> 1 Programmer (myself) and 1 Artist">
+                   <b>Team:</b> 1 Programmer (myself) and 1 Artist
+                </p>
+
+                <a href="https://github.com/oscaralri/gamegen5" target="_blank" class="btn btn-github btn-sm mt-2">
+                    <span data-es="Ver en GitHub ↗" data-en="View on GitHub ↗">View on GitHub ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- PROYECTO 3 -->
+        <div class="row project-card mb-5 align-items-center">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <a href="https://againstsoftware.itch.io/stratum" target="_blank">
+                    <img src="images/stratum.png" class="img-fluid rounded img-hover w-100" alt="Stratum">
+                </a>
+            </div>
+            <div class="col-12 col-md-7">
+                <h3 class="image-title mb-2">Stratum</h3>
+                <p data-es="Implementación de la UI, integración de sonido y matchmaking online, colaborando con el Lead Gameplay Programmer en el desarrollo de las mecánicas principales para un juego de cartas multijugador de 4 jugadores."
+                   data-en="Implementation of the UI, sound integration, and online matchmaking while collaborating with the Lead Gameplay Programmer to support and develop core gameplay mechanics for a 4-player multiplayer card game.">
+                   Implementation of the UI, sound integration, and online matchmaking while collaborating with the Lead Gameplay Programmer to support and develop core gameplay mechanics for a 4-player multiplayer card game.
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Habilidades:</b> C#, Unity, Unity Netcode"
+                   data-en="<b>Skills:</b> C#, Unity, Unity Netcode">
+                   <b>Skills:</b> C#, Unity, Unity Netcode
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Equipo:</b> 3 Programadores y 3 Artistas" 
+                   data-en="<b>Team:</b> 3 Programmers and 3 Artists">
+                   <b>Team:</b> 3 Programmers and 3 Artists
+                </p>
+
+                <a href="https://againstsoftware.itch.io/stratum" target="_blank" class="btn btn-github btn-sm mt-2">
+                    <span data-es="Ver en itch.io ↗" data-en="View on itch.io ↗">View on itch.io ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- PROYECTO 4 -->
+        <div class="row project-card mb-5 align-items-center">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <a href="https://github.com/oscaralri/pezpistola" target="_blank">
+                    <img src="images/weirdFishes.png" class="img-fluid rounded img-hover w-100" alt="Weird Fishes">
+                </a>
+            </div>
+            <div class="col-12 col-md-7">
+                <h3 class="image-title mb-2">Weird Fishes</h3>
+                <p data-es="Diseño y programación de las mecánicas principales de juego, como la pesca y el disparo."
+                   data-en="Design and programming of core gameplay mechanics such as fishing and shooting.">
+                   Design and programming of core gameplay mechanics such as fishing and shooting.
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Habilidades:</b> C#, Unity"
+                   data-en="<b>Skills:</b> C#, Unity">
+                   <b>Skills:</b> C#, Unity
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Equipo:</b> 1 Programador (yo) y 1 Artista" 
+                   data-en="<b>Team:</b> 1 Programmer (myself) and 1 Artist">
+                   <b>Team:</b> 1 Programmer (myself) and 1 Artist
+                </p>
+
+                <a href="https://github.com/oscaralri/pezpistola" target="_blank" class="btn btn-github btn-sm mt-2">
+                    <span data-es="Ver en GitHub ↗" data-en="View on GitHub ↗">View on GitHub ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- PROYECTO 5 -->
+        <div class="row project-card mb-5 align-items-center">
+            <div class="col-12 col-md-5 mb-3 mb-md-0">
+                <a href="https://github.com/Ndj-13/IScream_v2" target="_blank">
+                    <img src="images/iscream.png" class="img-fluid rounded img-hover w-100" alt="I-Scream">
+                </a>
+            </div>
+            <div class="col-12 col-md-7">
+                <h3 class="image-title mb-2">I-Scream</h3>
+                <p data-es="Diseño y programación de las mecánicas principales para un juego web online. Desarrollo de una API REST para el almacenamiento persistente de datos de usuario e integración de WebSockets para la comunicación en tiempo real en el gameplay."
+                   data-en="Design and programming of core gameplay mechanics for an online browser game. Development of a REST API for persistent user data storage and integration of WebSockets for real-time online communication.">
+                   Design and programming of core gameplay mechanics for an online browser game. Development of a REST API for persistent user data storage and integration of WebSockets for real-time online communication.
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Habilidades:</b> JavaScript, Phaser, Spring Boot, API REST, WebSockets"
+                   data-en="<b>Skills:</b> JavaScript, Phaser, Spring Boot, REST API, WebSockets">
+                   <b>Skills:</b> JavaScript, Phaser, Spring Boot, REST API, WebSockets
+                </p>
+
+                <p class="mb-2 team-size" 
+                   data-es="<b>Equipo:</b> 2 Programadores y 3 Artistas" 
+                   data-en="<b>Team:</b> 2 Programmers and 3 Artists">
+                   <b>Team:</b> 2 Programmers and 3 Artists
+                </p>
+
+                <a href="https://github.com/Ndj-13/IScream_v2" target="_blank" class="btn btn-github btn-sm mt-2">
+                    <span data-es="Ver en GitHub ↗" data-en="View on GitHub ↗">View on GitHub ↗</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script>
-        let currentLang = 'en'; 
+    const langToggleBtn = document.getElementById('lang-toggle');
 
-        document.getElementById('lang-toggle').addEventListener('click', function() {
-            currentLang = currentLang === 'es' ? 'en' : 'es';
-
-            document.querySelectorAll('[data-es]').forEach(el => {
-                el.innerText = el.getAttribute(`data-${currentLang}`);
-            });
-
-            this.innerText = currentLang === 'es' ? 'English' : 'Español';
+    function setLanguage(lang) {
+        document.querySelectorAll('[data-es]').forEach(el => {
+            el.innerHTML = el.getAttribute(`data-${lang}`);
         });
 
-        window.onload = function() {
-            initializeNavMesh();
-        };
+        langToggleBtn.innerText = lang === 'es' ? 'English' : 'Español';
         
-        function initializeNavMesh() {
+        localStorage.setItem('preferredLang', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const savedLang = localStorage.getItem('preferredLang');
+        
+        if (savedLang) {
+            setLanguage(savedLang);
         }
-    </script>
+    });
+
+    langToggleBtn.addEventListener('click', function() {
+        const currentLang = localStorage.getItem('preferredLang') || 'en';
+        const newLang = currentLang === 'es' ? 'en' : 'es';
+        
+        setLanguage(newLang);
+    });
+
+    
+
+    window.onload = function() {
+        initializeNavMesh();
+    };
+    
+    function initializeNavMesh() {
+    }
+</script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
