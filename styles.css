@@ -221,16 +221,29 @@ body {
 }
 
 .team-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-subtle);
+    padding: 0.25rem 0.65rem;
+    border-radius: 6px;
+}
+
+.team-meta i {
     color: var(--accent-light);
+    font-size: 0.9rem;
 }
 
 .project-title {
-    color: var(--text-primary);
-    font-size: 1.35rem;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    color: var(--accent-light);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.015em;
 }
 
 .project-desc {
