@@ -152,8 +152,8 @@ body {
 
 /* PROJECTS SECTION */
 .projects-section {
-    padding: 3.25rem 0 5rem; /* Antes: 4.5rem 0 5rem */
-    scroll-margin-top: 4.5rem; /* Compensa la altura del navbar al hacer scroll a #proyectos */
+    padding: 3.25rem 0 5rem;
+    scroll-margin-top: 4.5rem; 
 }
 .section-kicker {
     display: block;
